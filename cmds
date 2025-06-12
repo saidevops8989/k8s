@@ -10,6 +10,11 @@ kubectl get deployment -n namespace
 
 kubectl get pods -n namespace
 
+kubectl expose deployment mydeployment --type=NodePort --port=80 -n cse
+
+and then access from browser fot the nodeport
+
+
 kubectl delete deployment/mydeployment
 
 ######service#######
